@@ -8,7 +8,7 @@ Time spent: **5** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] User sees app icon in home screen and styled launch screen. (1pt)
+- [x] User sees app icon in home screen and styled launch screen. (1pt)
 - [x] User can sign up to create a new account. (1pt)
 - [x] User can log in. (1pt)
 - [x] User can take a photo, add a caption, and post it to the server. (3pt)
@@ -16,11 +16,21 @@ The following **required** functionality is completed:
 
 The following **bonus** features are implemented:
 
-- [ ] User can pull to refresh. (1pt)
+- [x] User can pull to refresh. (1pt)
 - [ ] User can load past tweets infinitely. (2pts)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Launch screen and sign up:
+
+<img src='https://i.imgur.com/Qyvkupa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Logging in:
+
+<img src='https://i.imgur.com/vb1AMyA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Creating a post:
+
+<img src='https://i.imgur.com/rJRXHJv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
