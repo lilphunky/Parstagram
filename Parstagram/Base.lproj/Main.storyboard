@@ -192,6 +192,14 @@
                                     <action selector="onSubmitButton:" destination="c4j-Rv-4KA" eventType="touchUpInside" id="zxI-gW-axN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyM-n8-0UF">
+                                <rect key="frame" x="20" y="33" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="onCloseButton:" destination="c4j-Rv-4KA" eventType="touchUpInside" id="jue-gv-FgR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CnO-cA-oSu"/>
