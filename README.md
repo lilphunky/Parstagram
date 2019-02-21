@@ -34,3 +34,7 @@ Logging in:
 Creating a post:
 
 <img src='https://i.imgur.com/rJRXHJv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Pull to refresh:
+
+<img src='https://i.imgur.com/LRwPCBt.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
