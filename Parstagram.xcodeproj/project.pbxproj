@@ -16,6 +16,7 @@
 		B44A31ED221563DF0085467F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44A31EB221563DF0085467F /* LaunchScreen.storyboard */; };
 		B44A31F8221563E00085467F /* ParstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A31F7221563E00085467F /* ParstagramTests.swift */; };
 		B44A3203221563E00085467F /* ParstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A3202221563E00085467F /* ParstagramUITests.swift */; };
+		B4768456222536DE0087655C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4768455222536DE0087655C /* CommentCell.swift */; };
 		B4B3DB87221D517B00CDC9A0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B3DB86221D517B00CDC9A0 /* CameraViewController.swift */; };
 		B4B6315E221669BD00399092 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6315D221669BD00399092 /* LoginViewController.swift */; };
 		B4B63160221669C600399092 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6315F221669C600399092 /* FeedViewController.swift */; };
@@ -58,6 +59,7 @@
 		B44A31FE221563E00085467F /* ParstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44A3202221563E00085467F /* ParstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParstagramUITests.swift; sourceTree = "<group>"; };
 		B44A3204221563E00085467F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4768455222536DE0087655C /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		B4B3DB86221D517B00CDC9A0 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		B4B6315D221669BD00399092 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B4B6315F221669C600399092 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				B4B6315F221669C600399092 /* FeedViewController.swift */,
 				B4B3DB86221D517B00CDC9A0 /* CameraViewController.swift */,
 				B4B8B44B221E59DB0018E5B0 /* PostCell.swift */,
+				B4768455222536DE0087655C /* CommentCell.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				B4B63160221669C600399092 /* FeedViewController.swift in Sources */,
 				B44A31E3221563DE0085467F /* AppDelegate.swift in Sources */,
 				B4B8B44C221E59DB0018E5B0 /* PostCell.swift in Sources */,
+				B4768456222536DE0087655C /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
