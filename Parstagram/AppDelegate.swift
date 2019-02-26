@@ -22,6 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://guarded-everglades-66064.herokuapp.com/parse"
             })
         )
+        
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let feedViewController = main.instantiateViewController(withIdentifier: "FeedViewController")
+            
+            window?.rootViewController = feedViewController
+        }
+        
         return true
     }
 
