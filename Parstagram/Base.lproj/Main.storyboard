@@ -85,14 +85,56 @@
         <!--Profile-->
         <scene sceneID="aJK-dx-a4g">
             <objects>
-                <viewController id="KFx-CM-Sv8" sceneMemberID="viewController">
+                <viewController id="KFx-CM-Sv8" customClass="ProfileViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ATb-PU-al3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_profile_pic" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3e-Ex-OGp">
+                                <rect key="frame" x="92.5" y="111" width="190" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="S0k-OK-K2k"/>
+                                    <constraint firstAttribute="height" constant="190" id="Vss-co-jvA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pH-Qi-HIg">
+                                <rect key="frame" x="148" y="338" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYT-7H-8ta">
+                                <rect key="frame" x="95.5" y="564" width="184" height="30"/>
+                                <state key="normal" title="Choose new profile picture"/>
+                                <connections>
+                                    <action selector="onChooseProfilePicButton:" destination="KFx-CM-Sv8" eventType="touchUpInside" id="uOf-Wn-4bV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkX-ob-kTm">
+                                <rect key="frame" x="143.5" y="309" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nYT-7H-8ta" firstAttribute="centerX" secondItem="ATb-PU-al3" secondAttribute="centerX" id="2ck-1s-Ph2"/>
+                            <constraint firstItem="fkX-ob-kTm" firstAttribute="centerX" secondItem="ATb-PU-al3" secondAttribute="centerX" id="C8R-A3-Tvv"/>
+                            <constraint firstItem="3pH-Qi-HIg" firstAttribute="centerX" secondItem="ATb-PU-al3" secondAttribute="centerX" id="GE4-S0-vkn"/>
+                            <constraint firstItem="U3e-Ex-OGp" firstAttribute="centerX" secondItem="ATb-PU-al3" secondAttribute="centerX" id="HTZ-Nc-aeq"/>
+                            <constraint firstItem="fkX-ob-kTm" firstAttribute="top" secondItem="U3e-Ex-OGp" secondAttribute="bottom" constant="8" id="OR8-Gq-0Js"/>
+                            <constraint firstItem="TfH-Sl-qJJ" firstAttribute="bottom" secondItem="nYT-7H-8ta" secondAttribute="bottom" constant="24" id="Zsp-Dt-tDF"/>
+                            <constraint firstItem="U3e-Ex-OGp" firstAttribute="centerY" secondItem="TfH-Sl-qJJ" secondAttribute="bottom" multiplier="1:3" id="feF-0n-g5v"/>
+                            <constraint firstItem="3pH-Qi-HIg" firstAttribute="top" secondItem="fkX-ob-kTm" secondAttribute="bottom" constant="8" id="vJ4-5M-3y5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TfH-Sl-qJJ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="8qh-0L-dZf"/>
+                    <connections>
+                        <outlet property="profilePicImageView" destination="U3e-Ex-OGp" id="WHp-iq-7Bt"/>
+                        <outlet property="usernameLabel" destination="3pH-Qi-HIg" id="FlI-PA-mG5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gxg-rE-Aoy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,7 +358,7 @@
         <scene sceneID="hZy-Mm-lOq">
             <objects>
                 <navigationController storyboardIdentifier="FeedViewController" automaticallyAdjustsScrollViewInsets="NO" id="2jR-2t-pAr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="h8h-QO-D7X"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="feed_tab" id="h8h-QO-D7X"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DG2-Ih-L2g">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -335,7 +377,7 @@
         <scene sceneID="ykr-Rk-Lbc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iqy-rD-piY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="4IX-FX-dLs"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile_tab" id="4IX-FX-dLs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5vD-m6-wK1">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -352,7 +394,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="default_profile_pic" width="240" height="240"/>
+        <image name="feed_tab" width="25" height="25"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
+        <image name="profile_tab" width="25" height="25"/>
     </resources>
 </document>
