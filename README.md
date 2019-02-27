@@ -15,7 +15,7 @@ The following **required** functionality is completed:
 
 The following **bonus** features are implemented:
 
-- [ ] User can add a profile picture. (2pts)
+- [x] User can add a profile picture. (2pts)
 - [ ] Profile pictures are shown for posts and comments. (2pts)
 
 ## Video Walkthrough
@@ -25,6 +25,10 @@ Here's a walkthrough of implemented user stories:
 Required functionality:
 
 <img src='https://i.imgur.com/0PEO8ps.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+User can add a profile picture:
+
+<img src='https://i.imgur.com/FLP13u6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 # Parstagram - Part I
 
