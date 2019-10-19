@@ -32,8 +32,6 @@ User can add a profile picture:
 
 This is an Instagram clone with a custom Parse backend that allows a user to post photos and view a global photos feed.
 
-Time spent: **8** hours spent in total
-
 ## User Stories
 
 The following **required** functionality is completed:
@@ -47,7 +45,6 @@ The following **required** functionality is completed:
 The following **bonus** features are implemented:
 
 - [x] User can pull to refresh. (1pt)
-- [ ] User can load past tweets infinitely. (2pts)
 
 ## Video Walkthrough
 
